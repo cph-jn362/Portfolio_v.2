@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Dette er min fornyet version af mit portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="script" href="javascript/script.js">
+  <script src="https://kit.fontawesome.com/4ff8ce54b4.js" crossorigin="anonymous"></script>
+  <title>John Nielsen | Projekter</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container-header">
+      <div class="website-logo"><a href="index.html"><img src="images/portfolio_2.0_logo_final.svg" alt="logo"></a></div>
+      <div class="menu-forside"><a href="index.html">FORSIDE</a></div>
+      <div class="menu-profil"><a href="profil-om_mig_selv.html">PROFIl</a></div>
+      <div class="menu-projekter"><a href="projekter-projektoversigt.html" class="active-global">PROJEKTER</a></div>
+      <div class="menu-kontakt"><a href="kontakt-kontaktformular.html" >KONTAKT</a></div>
+    </div>
+  </header>
+
+  <content>
+    <div class="container-content-projekter">
+      <div class="sidebar-projekter">
+        <ul>
+          <li><a href="projekter-projektoversigt.html">PROJEKTOVERSIGT</a></li>
+          <li><a href="projekter-flowprojekter.html">FLOWPROJEKTER</a></li>
+          <ul class="sidebar-projekter-undermenu">
+            <li class="active-lokal-undermenu"><a href="projekter-flow_1.html">FLOW-1</a></li>
+            <li><a href="projekter-flow_2.html">FLOW-2</a></li>
+            <li><a href="projekter-flow_3.html">FLOW-3</a></li>
+            <li><a href="projekter-flow_4.html">FLOW-4</a></li>
+            <li><a href="projekter-flow_5.html">FLOW-5</a></li>
+          </ul>
+          <li><a href="projekter-personligt.html">PERSONLIGT</a></li>
+          <li><a href="projekter-arbejde.html">ARBEJDE</a></li>
+        </ul>
+      </div>
+      <div class="container-flow_1">
+        <div class="flow_1-titel">Flow 1 - Billedebehandling<hr></div>
+        <div class="container-brødtekst-projekter-5">
+          <div class="container-display-flow_1">
+            <img class="myslides" src="images/oprindelige_billede.jpg" alt="Oprindelige billede">
+            <img class="myslides" src="images/redigeret_billede.jpg" alt="Redigeret billde">
+            <img class="myslides" src="images/forbedret_billede.jpg" alt="Forbedret billde">
+            <button class="button-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button-display-right" onclick="plusDivs(1)">&#10095;</button>
+            <hr>
+            <p>Jeg har her taget udgangspunkt i flow 1.1 - Photoshop. I opgaven skulle vi individuelt
+              tage et billede, som vi havde taget fra en tur, og producere et nyt billede, ved at manipulere
+              det i Adobe Photoshop. Vi skulle bl.a. beskære fotoet, skrumpe dens dimensioner, ændre farvetonen og meget mere.</p>
+            <div class="læs_mere-2"><a href="files/flow-1.1-photoshop.pdf" target="_blank"><p>Læs mere her</p></a></div>
+          </div>
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("myslides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+          }
+          </script>
+        </div>
+        </div>
+     </div>
+  </content>
+
+  <footer>
+    <div class="container-footer">
+      <div class="google-ikon"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=johngeoffreynielsen@gmail.com&su=&body=" target="_blank"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></div>
+      <div class="linkedin-ikon"><a href="https://www.linkedin.com/learning/me?u=57077785" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

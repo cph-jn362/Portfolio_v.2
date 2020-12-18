@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Dette er min fornyet version af mit portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="script" href="javascript/script.js">
+  <script src="https://kit.fontawesome.com/4ff8ce54b4.js" crossorigin="anonymous"></script>
+  <title>John Nielsen | Projekter</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container-header">
+      <div class="website-logo"><a href="index.html"><img src="images/portfolio_2.0_logo_final.svg" alt="logo"></a></div>
+      <div class="menu-forside"><a href="index.html">FORSIDE</a></div>
+      <div class="menu-profil"><a href="profil-om_mig_selv.html">PROFIl</a></div>
+      <div class="menu-projekter"><a href="projekter-projektoversigt.html" class="active-global">PROJEKTER</a></div>
+      <div class="menu-kontakt"><a href="kontakt-kontaktformular.html" >KONTAKT</a></div>
+    </div>
+  </header>
+
+  <content>
+    <div class="container-content-projekter">
+      <div class="sidebar-projekter">
+        <ul>
+          <li><a href="projekter-projektoversigt.html">PROJEKTOVERSIGT</a></li>
+          <li><a href="projekter-flowprojekter.html">FLOWPROJEKTER</a></li>
+          <li><a href="projekter-personligt.html">PERSONLIGT</a></li>
+          <ul class="sidebar-projekter-undermenu">
+            <li class="active-lokal-undermenu"><a href="projekter-billeder.html">BILLEDER</a></li>
+          </ul>
+          <li><a href="projekter-arbejde.html">ARBEJDE</a></li>
+        </ul>
+      </div>
+      <div class="container-billeder">
+        <div class="billeder-titel">Billeder<hr></div>
+        <div class="container-brødtekst-projekter-10">
+          <div class="container-display-billeder">
+            <img class="myslides" src="images/retro-dreams.jpg" alt="ekskursion-billede-1">
+            <img class="myslides" src="images/stars.jpg" alt="ekskursion-billede-2">
+            <img class="myslides" src="images/miami-night.jpg" alt="ekskursion-billede-3">
+            <button class="button-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button-display-right" onclick="plusDivs(1)">&#10095;</button>
+            <hr>
+            <p>Disse billeder har jeg produceret i Adobe Photoshop. Jeg har siddet og leget
+              med programmet, så jeg kunne blive bedre til billedredigering. Ved hjælp af LinkedIn
+              Learning, har jeg fået en bredere forståelse af programmets værktøjer og funktioner. </p>
+          </div>
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("myslides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+          }
+          </script>
+        </div>
+        </div>
+     </div>
+  </content>
+
+  <footer>
+    <div class="container-footer">
+      <div class="google-ikon"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=johngeoffreynielsen@gmail.com&su=&body=" target="_blank"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></div>
+      <div class="linkedin-ikon"><a href="https://www.linkedin.com/learning/me?u=57077785" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
