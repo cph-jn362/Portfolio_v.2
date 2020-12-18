@@ -1,0 +1,1442 @@
+/* Generalt ------------------------------
+------------------------------------------  */
+
+body{
+margin: 0;
+height: auto;
+padding: 0;
+}
+
+#index{
+  animation: fadeIn 4s;
+}
+
+
+/* Animation ------------------------------
+------------------------------------------  */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(180px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+/* Header ------------------------------
+------------------------------------------  */
+
+.container-header{
+  display: flex;
+  flex-direction: row;
+}
+
+.container-header > div{
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+
+.container-header >  .menu-forside, .menu-profil, .menu-projekter, .menu-kontakt{
+  margin-left: 15px;
+  margin-top: 1.5em;
+}
+
+.container-header > div > a:not(.active-global){
+  color: black;
+  text-decoration: none;
+}
+
+.container-header > div > a:hover:not(.active-global){
+  /* text-decoration: underline; */
+  animation: fadeIn 1s;
+}
+
+.active-global {
+  color: black;
+  text-decoration: underline;
+}
+
+.container-header > .website-logo > a > img{
+  width: 120px;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+
+.container-header > .menu-forside{
+  margin-left: auto;
+}
+
+.menu-kontakt{
+  margin-right: 50px;
+}
+
+
+
+
+/* Sidebar-kontakt ------------------------------
+------------------------------------------  */
+
+.container-content-kontakt > .sidebar-kontakt{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(225, 244, 249, 0.75);
+  width: 14em;
+  padding: 30px 0px;
+}
+
+.sidebar-kontakt > ul{
+  margin: 0px;
+  padding: 0px 25px 0px 25px;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 100;
+}
+
+.sidebar-kontakt > ul > li{
+  list-style: none;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 10px 0px 10px 0px;
+}
+
+.sidebar-kontakt > ul > li > a{
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar-kontakt > ul > .active-lokal {
+  border-bottom: 1px solid black;
+}
+
+/* Sidebar-profil ------------------------------
+------------------------------------------  */
+
+
+.container-content-profil > .sidebar-profil{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(225, 244, 249, 0.75);
+  width: 14em;
+  padding: 30px 0px;
+}
+
+.sidebar-profil > ul{
+  margin: 0px;
+  padding: 0px 25px 0px 25px;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 100;
+}
+
+.sidebar-profil > ul > li{
+  list-style: none;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 10px 0px 10px 0px;
+}
+
+.sidebar-profil > ul > li > a{
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar-profil > ul > .active-lokal {
+  border-bottom: 1px solid black;
+}
+
+/* Sidebar-projekter ------------------------------
+------------------------------------------  */
+
+
+.container-content-projekter > .sidebar-projekter{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(225, 244, 249, 0.75);
+  width: 14em;
+  padding: 30px 0px;
+}
+
+.sidebar-projekter > ul{
+  margin: 0px;
+  padding: 0px 25px 0px 25px;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 100;
+}
+
+.sidebar-projekter > ul > li{
+  list-style: none;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 10px 0px 10px 0px;
+}
+
+.sidebar-projekter > ul > li > a{
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar-projekter > ul > .active-lokal {
+  border-bottom: 1px solid black;
+}
+
+.sidebar-projekter > ul > .sidebar-projekter-undermenu{
+  margin: 0px;
+  padding: 0px 25px 0px 25px;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 100;
+}
+
+
+.sidebar-projekter > ul > .sidebar-projekter-undermenu > li{
+  list-style: none;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 10px 0px 10px 15px;
+}
+
+.active-lokal-undermenu{
+  border-bottom: 1px solid black;
+}
+
+/* Content-forside ------------------------------
+------------------------------------------  */
+
+.container-content-forside{
+  display: flex;
+  flex-direction: row;
+  height: 1010px;
+  background: rgb(166,137,232);
+  background: linear-gradient(-180deg, rgba(166,137,232,1) 0%, rgba(137,209,232,1) 100%);
+}
+
+
+.forside-tekst{
+  margin-left: auto;
+  margin-right: 0.3em;
+  margin-top: 2.6em;
+  font-size: 7.1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  animation: fadeInRight 3s;
+}
+
+.forside-tekst > p{
+}
+
+
+/* Content-profil-profilbeskrivelse ------------------------------
+------------------------------------------  */
+
+.container-content-profil{
+  display: flex;
+  flex-direction: row;
+  height: 1310px;
+  background: rgb(166,137,232);
+  background: linear-gradient(-180deg, rgba(166,137,232,1) 0%, rgba(137,209,232,1) 100%);
+}
+
+
+.container-profilbeskrivelse{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+}
+
+.profilbeskrivelse-titel{
+    margin-top: 1em;
+    font-family: Roboto, arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 5em;
+}
+
+.container-brødtekst-profil-1{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 85%;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 150px;
+}
+
+.brødtekst-1{
+  width: 48.4em;
+  border-radius: 10px;
+  height: 5em;
+
+}
+
+.brødtekst-1 > p{
+  font-family: nunito, arial, sans-serif;
+  font-size: 20px;
+  padding: 14px 14px 14px 20px;
+  line-height: 1.5em;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.profilbillede-1 {
+  margin-left: auto;
+}
+
+.profilbillede-1 > img{
+  width: 16.2em;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.container-brødtekst-profil-2{
+  display: flex;
+  flex-direction: row;
+  flex-basis:100%;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 170px;
+}
+
+.brødtekst-2{
+  width: 47em;
+  height: 21em;
+  margin-left: auto;
+}
+
+.brødtekst-2 > p{
+  font-family: nunito, arial, sans-serif;
+  font-size: 20px;
+  padding: 14px 20px 14px 14px;
+  line-height: 1.5em;
+}
+
+.profilbillede-2{
+  margin-right: auto;
+  padding-right: 4em;
+}
+
+.profilbillede-2 > img{
+  width: 17.4em;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+/* Content-profil-cv ------------------------------
+------------------------------------------  */
+
+.container-brødtekst-profil-3{
+  display: flex;
+  flex-direction: column;
+  flex-basis:100%;
+  height: 15em;
+}
+
+.brødtekst-3{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 10px;
+  height: 17em;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.brødtekst-3 > p{
+  width: 70%;
+  font-family: nunito, arial, sans-serif;
+  font-size: 20px;
+  padding: 30px 14px 14px 20px;
+  line-height: 1.5em;
+  margin:0;
+}
+
+.cv-ikon{
+  margin-left: auto;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.læs_mere-1{
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, arial, sans-serif;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 3px 10px 3px 12px;
+  margin-top: 15px;
+}
+
+.læs_mere-1 > p{
+  font-size: 10px;
+  }
+
+.læs_mere-1 > a{
+  color: black;
+  text-decoration: none;
+}
+
+.læs_mere-1:hover{
+  background-color: black;
+}
+
+.læs_mere-1:hover > a{
+  color: white;
+}
+
+/* Content-projekter-projektoversigt --------
+------------------------------------------  */
+
+.container-content-projekter{
+  display: flex;
+  flex-direction: row;
+  height: 1510px;
+  background: rgb(166,137,232);
+  background: linear-gradient(-180deg, rgba(166,137,232,1) 0%, rgba(137,209,232,1) 100%);
+}
+
+.container-projektoversigt{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+}
+
+.projektoversigt-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.container-brødtekst-projekter-1{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 85%;
+}
+
+.projektoversigt-boks-1, .projektoversigt-boks-2, .projektoversigt-boks-3{
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 15px;
+  font-family: nunito, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.projektoversigt-boks-1-titel, .projektoversigt-boks-2-titel, .projektoversigt-boks-3-titel{
+  display: flex;
+  flex-direction: column;
+}
+
+.projektoversigt-boks-1-titel > h1, .projektoversigt-boks-2-titel > h1, .projektoversigt-boks-3-titel > h1{
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.projektoversigt-boks-1-brødtekst, .projektoversigt-boks-2-brødtekst, .projektoversigt-boks-3-brødtekst{
+  display: flex;
+  flex-direction: row;
+}
+
+.projektoversigt-boks-1-brødtekst > p, .projektoversigt-boks-2-brødtekst > p, .projektoversigt-boks-3-brødtekst > p{
+  font-family: nunito, arial, sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.projektoversigt-boks-1-brødtekst > img, .projektoversigt-boks-2-brødtekst > img, .projektoversigt-boks-3-brødtekst > img{
+  width: 250px;
+  height: 15%;
+  padding-left: 30px;
+
+}
+
+.projektoversigt-boks-1-titel > h1 > a, .projektoversigt-boks-1-brødtekst > p > a, .projektoversigt-boks-2-titel > h1 > a, .projektoversigt-boks-2-brødtekst > p > a,
+.projektoversigt-boks-3-titel > h1 > a, .projektoversigt-boks-3-brødtekst > p > a{
+  text-decoration: none;
+  color: black
+}
+
+/* Content-projekter-flowprojekter --------
+------------------------------------------  */
+
+.container-flowprojekter{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+
+}
+
+.flowprojekter-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.container-brødtekst-projekter-2{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-brødtekst-projekter-2 > li{
+  font-family: nunito, arial, sans-serif;
+  line-height: 1.5em;
+}
+
+.container-brødtekst-projekter-2 > li > p > a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.container-brødtekst-projekter-2 > li > h3{
+  font-family: Roboto, arial, sans-serif;
+}
+
+.container-brødtekst-projekter-2 > li > h3 > a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.container-brødtekst-projekter-2 > li > img{
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.wrap li {
+  background: white;
+  list-style: none;
+}
+
+.flex-item {
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.sidebar-projekter-undermenu > li > a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Content-projekter-personligt --------
+------------------------------------------  */
+
+.container-personligt{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+
+}
+
+.personligt-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.container-brødtekst-projekter-3{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-brødtekst-projekter-3 > li{
+  font-family: nunito, arial, sans-serif;
+}
+
+.container-brødtekst-projekter-3 > li > p > a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.container-brødtekst-projekter-3 > li > h3{
+  font-family: Roboto, arial, sans-serif;
+}
+
+.container-brødtekst-projekter-3 > li > h3 > a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.container-brødtekst-projekter-3 > li > img{
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.wrap li {
+  background: white;
+  list-style: none;
+}
+
+.flex-item {
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.sidebar-projekter-undermenu > li > a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Content-projekter-arbejde --------
+------------------------------------------  */
+
+.container-arbejde{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+
+}
+
+.arbejde-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.container-brødtekst-projekter-4{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-brødtekst-projekter-4 > li{
+  font-family: nunito, arial, sans-serif;
+}
+
+.container-brødtekst-projekter-4 > li > p > a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.container-brødtekst-projekter-4 > li > h3{
+  font-family: Roboto, arial, sans-serif;
+}
+
+.container-brødtekst-projekter-4 > li > h3 > a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.container-brødtekst-projekter-4 > li > img{
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.wrap li {
+  background: white;
+  list-style: none;
+}
+
+.flex-item {
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.sidebar-projekter-undermenu > li > a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Content-projekter-flow_1 ------------------------------
+------------------------------------------  */
+
+.container-flow_1{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+
+}
+
+.flow_1-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.myslides{
+  display: none;
+}
+
+.container-brødtekst-projekter-5{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-display-flow_1{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-display-flow_1 > .myslides{
+  width: 900px;
+  height: 650px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.button-display-right{
+}
+
+
+.container-display-flow_1 > p{
+  width: 900px;
+  font-family: nunito, arial, sans-serif;
+  font-size: 20px;
+}
+
+.læs_mere-2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 85%;
+  font-family: Roboto, arial, sans-serif;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 8px 10px 8px 16px;
+}
+
+.læs_mere-2 > a{
+  color: black;
+  text-decoration: none;
+}
+
+.læs_mere-2:hover{
+  background-color: black;
+}
+
+.læs_mere-2:hover > a{
+  color: white;
+}
+
+/* Content-projekter-flow_2 ------------------------------
+------------------------------------------  */
+
+.container-flow_2{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+
+}
+
+.flow_2-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.myslides{
+  display: none;
+}
+
+.container-brødtekst-projekter-6{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-display-flow_2{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-display-flow_2 > .myslides{
+  width: 1000px;
+  height: 550px;
+  border-radius: 10px;
+}
+
+button{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.button-display-right{
+}
+
+
+.container-display-flow_2 > p{
+  width: 1000px;
+  font-family: nunito, arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.læs_mere-3{
+  display: flex;
+  flex-direction: row;
+  margin-left: 85%;
+  font-family: Roboto, arial, sans-serif;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 8px 10px 8px 24px;
+}
+
+.læs_mere-3 > a{
+  color: black;
+  text-decoration: none;
+}
+
+.læs_mere-3:hover{
+  background-color: black;
+}
+
+.læs_mere-3:hover > a{
+  color: white;
+}
+
+/* Content-projekter-flow_3 ------------------------------
+------------------------------------------  */
+
+.container-flow_3{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+
+}
+
+.flow_3-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.myslides{
+  display: none;
+}
+
+.container-brødtekst-projekter-7{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-display-flow_3{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-display-flow_3 > .myslides{
+  width: 1000px;
+  height: 550px;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+}
+
+button{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.button-display-right{
+}
+
+
+.container-display-flow_3 > p{
+  width: 1000px;
+  font-family: nunito, arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.læs_mere-4{
+  display: flex;
+  flex-direction: row;
+  margin-left: 85%;
+  font-family: Roboto, arial, sans-serif;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 8px 10px 8px 24px;
+}
+
+.læs_mere-4 > a{
+  color: black;
+  text-decoration: none;
+}
+
+.læs_mere-4:hover{
+  background-color: black;
+}
+
+.læs_mere-4:hover > a{
+  color: white;
+}
+
+/* Content-projekter-flow_4 ------------------------------
+------------------------------------------  */
+
+.container-flow_4{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+
+}
+
+.flow_4-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.myslides{
+  display: none;
+}
+
+.container-brødtekst-projekter-8{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-display-flow_4{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-display-flow_4 > .myslides{
+  width: 1000px;
+  height: 550px;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+}
+
+button{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.button-display-right{
+}
+
+
+.container-display-flow_4 > p{
+  width: 900px;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: nunito, arial, sans-serif;
+}
+
+.læs_mere-5{
+  display: flex;
+  flex-direction: row;
+  margin-left: 85%;
+  font-family: Roboto, arial, sans-serif;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 8px 10px 8px 24px;
+}
+
+.læs_mere-5 > a{
+  color: black;
+  text-decoration: none;
+}
+
+.læs_mere-5:hover{
+  background-color: black;
+}
+
+.læs_mere-5:hover > a{
+  color: white;
+}
+
+/* Content-projekter-flow_5 ------------------------------
+------------------------------------------  */
+
+.container-flow_5{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+
+}
+
+.flow_5-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.myslides{
+  display: none;
+}
+
+.container-brødtekst-projekter-9{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-display-flow_5{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-display-flow_5 > .myslides{
+  width: 900px;
+  height: 650px;
+  border-radius: 10px;
+}
+
+button{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.button-display-right{
+}
+
+
+.container-display-flow_5 > p{
+  width: 900px;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: nunito, arial, sans-serif;
+}
+
+.læs_mere-6{
+  display: flex;
+  flex-direction: row;
+  margin-left: 83%;
+  font-family: Roboto, arial, sans-serif;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 8px 16px 8px 26px;
+}
+
+.læs_mere-6 > a{
+  color: black;
+  text-decoration: none;
+}
+
+.læs_mere-6:hover{
+  background-color: black;
+}
+
+.læs_mere-6:hover > a{
+  color: white;
+}
+
+/* Content-projekter-billeder ------------------------------
+------------------------------------------  */
+
+.container-billeder{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+
+}
+
+.billeder-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.myslides{
+  display: none;
+}
+
+.container-brødtekst-projekter-10{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-display-billeder{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-display-billeder> .myslides{
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+button{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.button-display-right{
+}
+
+
+.container-display-billeder > p{
+  width: 900px;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: nunito, arial, sans-serif;
+}
+
+
+/* Content-projekter-freelance ------------------------------
+------------------------------------------  */
+
+.container-freelance{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 70%;
+
+}
+
+.freelance-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+.myslides{
+  display: none;
+}
+
+.container-brødtekst-projekter-12{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-display-freelance{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-display-freelance > .myslides{
+  width: 1000px;
+  height: 550px;
+  border-radius: 10px;
+}
+
+button{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.button-display-right{
+}
+
+
+.container-display-freelance > p{
+  width: 900px;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: nunito, arial, sans-serif;
+}
+
+/* Content-kontakt ------------------------------
+------------------------------------------  */
+
+.container-content-kontakt{
+  display: flex;
+  flex-direction: row;
+  height: 1370px;
+  background: rgb(166,137,232);
+  background: linear-gradient(-180deg, rgba(166,137,232,1) 0%, rgba(137,209,232,1) 100%);
+}
+
+.container-kontaktformular{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-basis: 100%;
+}
+
+.kontaktformular{
+  margin-top: 1em;
+}
+
+form > p{
+ font-family: nunito, arial, sans-serif;
+ font-size: 20px;
+ margin-bottom: 20px;
+}
+
+.kontaktformular-titel{
+  margin-top: 1em;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+
+  input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+
+  input[placeholder="Skriv dit navn..."], input[placeholder="Skriv din e-mail..."], input[value="Send"]{
+  font-family: nunito, arial, sans-serif;
+  }
+
+  input[type=submit] {
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: black;
+    color: white;
+  }
+
+  label[for=name], label[for=email], label[for=subject]{
+    font-family: Roboto, arial, sans-serif;
+    font-weight: 400;
+  }
+
+  form{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.container-links{
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.container-links > h2{
+font-family: Roboto, Arial, sans-serif;
+font-weight:
+}
+
+.container-links > ul{
+  list-style: none;
+  font-family: nunito, arial, sans-serif;
+  font-size: 20px;
+  padding: 0px 0px 15px 0px;
+}
+
+.container-links > li{
+  padding-bottom: 10px;
+}
+
+
+.container-links > ul > li > a{
+  color: black;
+  text-decoration: none;
+}
+
+/* Footer ------------------------------
+------------------------------------------  */
+.container-footer{
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+
+.container-footer > div > a{
+  color: black;
+}
+
+.google-ikon{
+  margin-left: auto;
+}
+
+.linkedin-ikon{
+  margin-right: 1.2em;
+  margin-left: 0.8em;
+}
+
+.google-ikon, .linkedin-ikon{
+  margin-top: auto;
+  margin-bottom: 1.2em;
+}
